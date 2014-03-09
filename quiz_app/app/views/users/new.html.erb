@@ -1,0 +1,32 @@
+<h1>HomePage</h1>
+
+<p>
+	<%= form_for @question, :url "/users/new" do |f| %>
+		<%= f.radio_button :answer, 'TRUE' %>
+
+	<% end %>
+
+</p>
+
+<p>
+	<% form_tag
+	<%= radio_button_tag(:answer_one, "TRUE") %>
+	<%= label_tag(:answer_one, "TRUE") %>
+
+	<%= radio_button_tag(:answer_one, "FALSE") %>
+	<%= label_tag(:answer_one, "FALSE") %>
+</p>
+
+</p>
+	<%= radio_button_tag(:answer_two, "A") %>
+	<%= label_tag(:answer_two, "A") %>
+
+	<%= radio_button_tag(:answer_two, "B") %>
+	<%= label_tag(:answer_two, "B") %>
+
+	<%= radio_button_tag(:answer_two, "C") %>
+	<%= label_tag(:answer_two, "C") %>
+
+	<%= radio_button_tag(:answer_two, "D") %>
+	<%= label_tag(:answer_two, "D") %>
+</p>

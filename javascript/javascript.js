@@ -7,6 +7,7 @@ function getAnswer(q_num, q_ans) {
 	Give a question number and the answer chosen by the user, shows the answer and renders next question.
 	*/
 	currentSolution(q_num, q_ans);
+	//maybe solution is the one who has a "GOT IT BUTTON"
 	nextQuestion(q_num);
 }
 
@@ -22,7 +23,7 @@ function nextQuestion(current_q_num) {
 	next_q = parseInt(current_q_num) + 1;
 	if (next_q <= TOTAL_Q_NUM) {
 		next_question_box = "#q" + next_q + "_box";
-		$(next_question_box).fadeIn("slow");
+		$(next_question_box).slideDown("fast");
 	} else {
 		alert ("last question!");
 	}

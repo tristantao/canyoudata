@@ -1,13 +1,24 @@
 * {
  	margin:0px auto;
 }
+html, body{
+	text-align:center;
+	display: block;
+	background-color: white;
+	width: 100%;
+	height: 100%;
+	font-family: 'Esteban', sans-serif;
+}
+.question_p{
+	max-width: 800px;
+	margin: 100;
+}
 
 #mainheader {
 	text-align: center;
 	max-width: 800px;
 	font-size: 65px;
 }
-
 #subheader {
 	text-align: left;
 	max-width: 800px;
@@ -24,7 +35,6 @@
 	max-width: 800px;
 	font-size: 30px;
 }
-
 #head {
 	text-align: left;
 	max-width: 800px;
@@ -32,113 +42,67 @@
 	position: relative;
 	top: 90px;
 }
-
 .solution_box {
+	max-width: 800px;
 	display: none;
 }
-
-#finish_box {
-	width: 1000px;
-	height: 400px;
-	background: purple;
-	display: none;
-}
-
-
-html, body{
-	text-align:center;
-	display: block;
-	background-color: white;
-	width: 100%;
-	height: 100%;
-	font-family: 'Esteban', sans-serif;
-}
-
-
 #q1_box {
 	margin:0px auto;
 	height: auto;
 }
-
 .quiz_box {
+	padding: 100 100 100 100;
 	background: #3B90DD;
 	z-index: 1;
-	/*background-color: #66CCFF;*/
 	display:none;
 	text-align: left;
-	/*max-width: 800px;*/
 	font-size: 30px;
 	position: relative;
 	top: 120px;
 }
-
 #q1_question {
-	max-width: 800px;
 	position: relative;
 	top: 10px;
 }
-
 .answer_box {
-	width: 75%;
+	text-align:center;
 	z-index: 1;
 	display:none;
 	background: Gold;
 	padding: 50px;
-
+	position: relative;
+	top: 120px;
 }
-
-/*
-.quiz {
-  background-color : yellow;
-  height: 10px;
-  z-index: 1;
-  padding: 50px red;
-}
-*/
-
-.answer {
+.quiz_answer {
   height: 2em;
   z-index: 1;
 	padding: 50px red;
 	margin: 10;
 }
-
 li {
+	max-width: 800px;
 	padding: 10px;
 	list-style-type: none;
 }
-
 body {
-	margin:0;
-	padding:0;
+	margin:0 0 0 0;
+	padding:0 0 0 0;
 }
-
 #body {
 	width:800px;
 	margin: 0 auto;
 }
 
- #navbar ul {
-	margin: 0;
-	padding: 5px;
-	list-style-type: none;
-	text-align: left;
-	background-color:#3B90DD;
-	}
+#finish_box { /*this shit aint working right */
+	top : 10000px;
+	width: 1000px;
+	height: 500px;
+	background: purple;
+	display: none;
+	text-align:center;
+}
 
-#navbar ul li {
-	display: inline;
-	}
-
-#navbar ul li a {
-	text-decoration: none;
-	padding: .2em 1em;
-	color: #fff;
-	background-color: #3B90DD;
-	}
-
-#navbar ul li a:hover {
-	color: #000;
-	background-color: #fff;
-	}
-
+.see_answer {
+	z-index: 500;
+	text-align:center;
+}

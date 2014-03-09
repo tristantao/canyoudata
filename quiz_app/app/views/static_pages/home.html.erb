@@ -31,103 +31,103 @@
         <form class="question">
             <div id="q1_box" class="quiz_box">
                 <div id="q1_question">
-                        <p>Problem One</p>
-                        <p>If you choose an answer to this question at random, what is the chance you will be correct?</p>
+                        <p class="question_p">Problem One</p>
+                        <p class="question_p">If you choose an answer to this question at random, what is the chance you will be correct?</p>
                     <ul>
                         <li>
-                            <a id="q1_a" href="#" class="button" onclick = "getAnswer('1', 'a')" class="quiz answer">  A)  25% </a>
+                            <a id="q1_a" href="#" class="button" onclick = "getAnswer('1', 'a')" class="quiz_answer">  A)  25% </a>
                         </li>
                         <li>
-                            <input id="q1_b" type="button" onclick = "getAnswer('1', 'b')" class="quiz answer">  B)   50% </input>
+                            <input id="q1_b" type="button" onclick = "getAnswer('1', 'b')" class="quiz_answer">  B)   50% </input>
                         </li>
                         <li>
-                            <input id="q1_c"  type = "button" onclick = "getAnswer('1', 'c')" class="quiz answer">  C)   60% </input>
+                            <input id="q1_c"  type = "button" onclick = "getAnswer('1', 'c')" class="quiz_answer">  C)   60% </input>
                         </li>
                         <li>
-                            <input id="q1_d" type = "button" onclick = "getAnswer('1', 'd')" class="quiz answer">  D)   25% </input>
+                            <input id="q1_d" type = "button" onclick = "getAnswer('1', 'd')" class="quiz_answer">  D)   25% </input>
                         <li>
                     </ul>
                 </div>
             </div>
             <div id="a1_box" class="answer_box">
-                <p>
+                <p class="question_p">
                     ANS: The answer is 0% from the four possible choices. This is because the answer must be equal to the chance of selection and since there is a 50% chance of selecting 25% and a 25% chance of selecting 50% and a 25% chance of selecting 60% none are possible.
                 </p>
             </div>
 
             <div id="q2_box" class="quiz_box">
                 <div id="q2_question">
-                    <p>
+                    <p class="question_p">
                         I Jane is 33 years old, unmarried and very intelligent. She has a degree in philosophy and graduated cum laude. Furthermore, she is a woman with strong believes. As a student she was politically very active; she defended the rights of minorities and participated in anti-war demonstrations.
                     What do you think is more likely?
                     </p>
                 </div>
                 <ul>
                     <li>
-                        <input id="q1_a" type="button" onclick = "getAnswer('2', 'a')" class="quiz answer">
+                        <input id="q1_a" type="button" onclick = "getAnswer('2', 'a')" class="quiz_answer">
                           A) Jane works at a bank
                         </a>
                     </li>
                     <li>
-                        <input id="q2_b" type="button" onclick = "getAnswer('2', 'b')" class="quiz answer">
+                        <input id="q2_b" type="button" onclick = "getAnswer('2', 'b')" class="quiz_answer">
                         B) Jane works at a bank and is active in the Women’s Rights Movement
                         </input>
                     </li>
                 </ul>
+                <!--ADD HERE-->
             </div>
             <div id="a2_box" class="answer_box">
-                <p>
-                Most people choose the second possibility, but that is wrong: it can never be more likely than the first because it further constraints it (notice the word “and”).
+                <p class="question_p">
+                    Most people choose the second possibility, but that is wrong: it can never be more likely than the first because it further constraints it (notice the word “and”).
                 </p>
             </div>
 
             <div id="q3_box" class="quiz_box">
                 <div id="q2_question">
-                    <p>
+                    <p class="question_p">
                         One situation where people slip into confusing correlation and causality is in regression. For example, one might regress college GPA on SAT scores, obtaining a positive coefficient beta of SAT score in the regression equation. Consider the following two statements:
                     </p>
                 </div>
                 <ul>
                     <li>
-                        <input id="q3_a" type="button" onclick = "getAnswer('3', 'a')" class="quiz answer">
+                        <input id="q3_a" type="button" onclick = "getAnswer('3', 'a')" class="quiz_answer">
                             A.   An increase of one point in SAT scores causes, on average, an increase of β points in college GPA.
                         </input>
                     </li>
                     <li>
-                        <input id="q3_b"  type = "button" onclick = "getAnswer('3', 'b')" class="quiz answer">
+                        <input id="q3_b"  type = "button" onclick = "getAnswer('3', 'b')" class="quiz_answer">
                             B.   For every increase of one point in SAT scores, the increase in average college GPA is β points.
                         </input>
                     </li>
                 </ul>
             </div>
             <div id="a3_box" class="answer_box">
-                <p>
+                <p class="question_p">
                     Statement B is correct (assuming, of course, that the regression has been carried out correctly). Statement A is incorrect: the regression equation gives no information about causality. Indeed, there is likely a lurking variable (or probably a bunch of lurking variables) that affects both GPA and SAT score; SAT score is considered to be a (perhaps crude) measure 1of this lurking variable.
                 </p>
             </div>
 
             <div id="q4_box" class="quiz_box">
-                <div id="q2_question">
-                    <p>
+                <div id="q4_question">
+                    <p class="question_p">
                         True/False: If there are only two possible outcomes, and you don't know which is true, the probability of each of these outcomes is 1/2.
                     </p>
                 </div>
                 <ul>
                     <li>
-                        <input id="q4_a" type="button" onclick = "getAnswer('4', 'a')" class="quiz answer">  A)   TRUE </input>
+                        <input id="q4_a" type="button" onclick = "getAnswer('4', 'a')" class="quiz_answer">  A)   TRUE </input>
                     </li>
                     <li>
-                        <input id="q4_b" type="button" onclick = "getAnswer('4', 'b')" class="quiz answer">  B)   FALSE </input>
+                        <input id="q4_b" type="button" onclick = "getAnswer('4', 'b')" class="quiz_answer">  B)   FALSE </input>
                     </li>
-
                 </ul>
             </div>
             <div id="a4_box" class="answer_box">
-                <p>
+                <p class="question_p">
                     In fact, probabilities in such "binary outcome" situations could be anything from 0 to 1. For example, if the outcomes of interest are "has cancer" and "does not have cancer," the probabilities of having cancer are (in most cases) much less than 1/2. The empirical (frequentist) perspective allows us to estimate such probabilitie.
                 </p>
             </div>
-            <div id="finish_box" class="finish_box">
+            <div id="finish_box">
 
 
             </div>

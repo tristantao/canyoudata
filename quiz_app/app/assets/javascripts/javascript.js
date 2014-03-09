@@ -1,6 +1,7 @@
 
 var TOTAL_Q_NUM = 4; //Question num starts at 1.
 var ANS_KEY = {1:"E", 2:"A", 3:"B", 4:"B"};
+var ANS_SHOWING = {};
 
 var TOTAL_CORRECT = 0;
 
@@ -15,8 +16,11 @@ function getAnswer(current_q_num, q_ans) {
 }
 
 function generateAnswerButton(current_q_num) {
-	var questionBoxID= "#q"+current_q_num+"_box";
- $(questionBoxID).append( "<a href='#' class='see_answer'>See Answer</a>");
+	if (!(current_q_num in ANS_SHOWING)) {
+		var questionBoxID= "#q"+current_q_num+"_box";
+	 	$(questionBoxID).append( "<a href='#' class='see_answer'>See Answer</a>");
+	 	ANS_SHOWING[current_q_num] = true;
+ }
 }
 
 function currentSolution(current_q_num, q_ans) {
@@ -47,7 +51,6 @@ function scrollIntoView(ID) {
 	    scrollTop: offset.top,
 	    scrollLeft: offset.left
 	});
-
 }
 
 function fadeIDBoxBackground(boxID, color) {
@@ -78,7 +81,6 @@ function nextQuestion(current_q_num) {
 
 function rendersFinishView() {
 		/*What action/view to render when the quiz is finisheds*/
-	alert("fin");
 	$("#finish_box").show("slow");
 	scrollIntoView("#finish_box");
 	switch(TOTAL_CORRECT)

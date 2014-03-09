@@ -3,9 +3,10 @@ QuizApp::Application.routes.draw do
     #get '/home', :to => redirect('static_pages/index.html')
     #get '/home2', :to => redirect('index.html')
   #get 'static/:path', :controller => 'static', :action => 'show'
-  get 'static_pages/home'
-  get "static_pages/index"
-
+  #get 'static_pages/home'
+  #get "static_pages/index"
+  root to: 'static_pages#home'
+  
   #get 'static/index'
 
   get "users/new"

@@ -20,13 +20,4 @@ ActiveRecord::Schema.define(version: 20140309054617) do
     t.datetime "updated_at"
   end
 
-  create_table "users", force: true do |t|
-    t.string   "answer_one"
-    t.string   "answer_two"
-    t.string   "answer_three"
-    t.string   "answer_four"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
 end

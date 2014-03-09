@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+    <%= csrf_meta_tag %>
+    <head>
+        <h1>
+            Are you Data Literate?
+        </h1>
+    </head>
+    <body>
+        <div id="head">
+          Define "21st century Literacy"?
+        </div>
+        <p>In todays age, interpreting data is all around us. More often than not you are analyzing data in some fashion. Blah blah blah other good writing</p>
+        <form class="question">
+            <div id="q1_box" class="quiz_box">
+                <div id="q1_question">
+                    <p>If you choose an answer to this question at random, what is the chance you will be correct?</p>
+                </div>
+
+                <ul>
+                    <li>
+                        <a id="q1_a" href="#" class="button" onclick = "getAnswer('1', 'a')" class="quiz answer">  A)  25% </a>
+                    </li>
+                    <li>
+                        <input id="q1_b" type="button" onclick = "getAnswer('1', 'b')" class="quiz answer">  B)   50% </input>
+                    </li>
+                    <li>
+                        <input id="q1_c"  type = "button" onclick = "getAnswer('1', 'c')" class="quiz answer">  C)   60% </input>
+                    </li>
+                    <li>
+                        <input id="q1_d" type = "button" onclick = "getAnswer('1', 'd')" class="quiz answer">  D)   25% </input>
+                    <li>
+                </ul>
+            </div>
+            <div id="q2_box" class="quiz_box">
+                <div id="q2_question">
+                    <p>If you choose an answer to this question at random, what is the chance you will be correct?</p>
+                </div>
+                <ul>
+                    <li>
+                        <a id="q2_a" href="#" class="button" onclick = "getAnswer('2', 'a')" class="quiz answer">  A)   25% </a>
+                    </li>
+                    <li>
+                        <input id="q2_b" type="button" onclick = "getAnswer('2', 'b')" class="quiz answer">  B)   50% </input>
+                    </li>
+                    <li>
+                        <input id="q2_c"  type = "button" onclick = "getAnswer('2', 'c')" class="quiz answer">  C)   60% </input>
+                    </li>
+                    <li>
+                        <input id="q2_d" type = "button" onclick = "getAnswer('2', 'd')" class="quiz answer">  D)   25% </input>
+                    <li>
+                </ul>
+            </div>
+
+            <div id="q3_box" class="quiz_box">
+                <div id="q2_question">
+                    <p>If you choose an answer to this question at random, what is the chance you will be correct?</p>
+                </div>
+                <ul>
+                    <li>
+                        <a id="q3_a" href="#" class="button" onclick = "getAnswer('3', 'a')" class="quiz answer">  A)   25% </a>
+                    </li>
+                    <li>
+                        <input id="q3_b" type="button" onclick = "getAnswer('3', 'b')" class="quiz answer">  B)   50% </input>
+                    </li>
+                    <li>
+                        <input id="q3_c"  type = "button" onclick = "getAnswer('3', 'c')" class="quiz answer">  C)   60% </input>
+                    </li>
+                    <li>
+                        <input id="q3_d" type = "button" onclick = "getAnswer('3', 'd')" class="quiz answer">  D)   25% </input>
+                    <li>
+                </ul>
+            </div>
+
+            <div id="q4_box" class="quiz_box">
+                <div id="q2_question">
+                    <p>If you choose an answer to this question at random, what is the chance you will be correct?</p>
+                </div>
+                <ul>
+                    <li>
+                        <a id="q4_a" href="#" class="button" onclick = "getAnswer('4', 'a')" class="quiz answer">  A)   25% </a>
+                    </li>
+                    <li>
+                        <input id="q4_b" type="button" onclick = "getAnswer('4', 'b')" class="quiz answer">  B)   50% </input>
+                    </li>
+                    <li>
+                        <input id="q4_c"  type = "button" onclick = "getAnswer('4', 'c')" class="quiz answer">  C)   60% </input>
+                    </li>
+                    <li>
+                        <input id="q4_d" type = "button" onclick = "getAnswer('4', 'd')" class="quiz answer">  D)   25% </input>
+                    <li>
+                </ul>
+            </div>
+        </form>
+
+        <div id="q3_box" class="quiz_box">
+        </div>
+
+        <div id="q4_box" class="question quiz">
+        </div>
+            <script type='text/javascript'>
+                $(document).ready(function() {
+                    $("#q1_box").show(); //everything starts hidden
+                    $(".answer_button").click(function() {
+                        renderNextPage(this);
+                    });
+                });
+            </script>
+     </body>
+ </html>

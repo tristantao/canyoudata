@@ -8,7 +8,6 @@ function getAnswer(q_num, q_ans) {
 	Give a question number and the answer chosen by the user, shows the answer and renders next question.
 	*/
 	currentSolution(q_num, q_ans);
-	//maybe solution is the one who has a "GOT IT BUTTON"
 	nextQuestion(q_num);
 }
 
@@ -26,8 +25,20 @@ function currentSolution(current_q_num, q_ans) {
 
 	var answer_id = "#a" + current_q_num + "_box";
 	$(answer_id).show("slow");
-
+	scrollIntoView(answer_id);
 	return false;
+}
+
+function scrollIntoView(ID) {
+	/*Scolls the page to get in the view of ID*/
+	var offset = $(ID).offset(); //
+	offset.left -= 20;
+	offset.top -= 20;
+	$('html, body').animate({
+	    scrollTop: offset.top,
+	    scrollLeft: offset.left
+	});
+
 }
 
 function fadeIDBoxBackground(boxID, color) {
@@ -38,7 +49,7 @@ function fadeIDBoxBackground(boxID, color) {
    	'-o-transition': 'background-color 1000ms linear',
    	'-ms-transition': 'background-color 1000ms linear',
     'transition': 'background-color 1000ms linear'
-		});
+	});
 }
 
 function nextQuestion(current_q_num) {
@@ -49,9 +60,24 @@ function nextQuestion(current_q_num) {
 		next_question_box = "#q" + next_q + "_box";
 		//alert("next question:" + next_question_box);
 		$(next_question_box).show("slow");
-		$(next_question_box).scrollIntoView();
+		scrollIntoView(next_question_box);
 	} else {
-		alert ("last question!");
+		rendersFinishView();
 	} //end else
 	return false;
 }
+
+function rendersFinishView() {
+		/*What action/view to render when the quiz is finisheds*/
+	alert("fin");
+	$("#finish_box").show("slow");
+	scrollIntoView("#finish_box");
+}
+
+
+
+
+
+
+
+

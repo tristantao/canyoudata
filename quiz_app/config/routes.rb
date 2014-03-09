@@ -1,4 +1,5 @@
 QuizApp::Application.routes.draw do
+    match '/home' => 'static_pages#index.html'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

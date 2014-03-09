@@ -1,3 +1,8 @@
+
+.solution_box {
+	display: none;
+}
+
 * {
  	margin:0px auto;
 }
@@ -10,9 +15,23 @@ html, body{
 
 
 #q1_box {
-	background-color: #66CCFF;
 	margin:0px auto;
 	height: auto;
+}
+
+.quiz_box {
+	background: AliceBlue;
+	z-index: 1;
+	/*background-color: #66CCFF;*/
+	display:none;
+}
+
+.answer_box {
+	width: 75%;
+	z-index: 1;
+	display:none;
+	background: Gold;
+	padding: 50px;
 }
 
 /*
@@ -44,14 +63,6 @@ body {
 #body {
 	width:800px;
 	margin: 0 auto;
-}
-
-.quiz_box {
-	display:none;
-}
-
-.solution_box {
-	display: none;
 }
 
 

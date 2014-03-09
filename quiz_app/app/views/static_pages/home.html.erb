@@ -16,7 +16,6 @@
                 <div id="q1_question">
                     <p>If you choose an answer to this question at random, what is the chance you will be correct?</p>
                 </div>
-
                 <ul>
                     <li>
                         <a id="q1_a" href="#" class="button" onclick = "getAnswer('1', 'a')" class="quiz answer">  A)  25% </a>
@@ -32,44 +31,61 @@
                     <li>
                 </ul>
             </div>
+            <div id="a1_box" class="answer_box">
+                <p>
+                    ANS: The answer is 0% from the four possible choices. This is because the answer must be equal to the chance of selection and since there is a 50% chance of selecting 25% and a 25% chance of selecting 50% and a 25% chance of selecting 60% none are possible.
+                </p>
+            </div>
+
             <div id="q2_box" class="quiz_box">
                 <div id="q2_question">
-                    <p>If you choose an answer to this question at random, what is the chance you will be correct?</p>
+                    <p>
+                        I Jane is 33 years old, unmarried and very intelligent. She has a degree in philosophy and graduated cum laude. Furthermore, she is a woman with strong believes. As a student she was politically very active; she defended the rights of minorities and participated in anti-war demonstrations.
+                    What do you think is more likely?
+                    </p>
                 </div>
                 <ul>
                     <li>
-                        <a id="q2_a" href="#" class="button" onclick = "getAnswer('2', 'a')" class="quiz answer">  A)   25% </a>
+                        <input id="q1_a" type="button" onclick = "getAnswer('2', 'a')" class="quiz answer">
+                          A) Jane works at a bank
+                        </a>
                     </li>
                     <li>
-                        <input id="q2_b" type="button" onclick = "getAnswer('2', 'b')" class="quiz answer">  B)   50% </input>
+                        <input id="q2_b" type="button" onclick = "getAnswer('2', 'b')" class="quiz answer">
+                        B) Jane works at a bank and is active in the Women’s Rights Movement
+                        </input>
                     </li>
-                    <li>
-                        <input id="q2_c"  type = "button" onclick = "getAnswer('2', 'c')" class="quiz answer">  C)   60% </input>
-                    </li>
-                    <li>
-                        <input id="q2_d" type = "button" onclick = "getAnswer('2', 'd')" class="quiz answer">  D)   25% </input>
-                    <li>
                 </ul>
+            </div>
+            <div id="a2_box" class="answer_box">
+                <p>
+                Most people choose the second possibility, but that is wrong: it can never be more likely than the first because it further constraints it (notice the word “and”).
+                </p>
             </div>
 
             <div id="q3_box" class="quiz_box">
                 <div id="q2_question">
-                    <p>If you choose an answer to this question at random, what is the chance you will be correct?</p>
+                    <p>
+                        One situation where people slip into confusing correlation and causality is in regression. For example, one might regress college GPA on SAT scores, obtaining a positive coefficient beta of SAT score in the regression equation. Consider the following two statements:
+                    </p>
                 </div>
                 <ul>
                     <li>
-                        <a id="q3_a" href="#" class="button" onclick = "getAnswer('3', 'a')" class="quiz answer">  A)   25% </a>
+                        <input id="q3_a" type="button" onclick = "getAnswer('3', 'a')" class="quiz answer">
+                            A.   An increase of one point in SAT scores causes, on average, an increase of β points in college GPA.
+                        </input>
                     </li>
                     <li>
-                        <input id="q3_b" type="button" onclick = "getAnswer('3', 'b')" class="quiz answer">  B)   50% </input>
+                        <input id="q3_b"  type = "button" onclick = "getAnswer('3', 'b')" class="quiz answer">
+                            B.   For every increase of one point in SAT scores, the increase in average college GPA is β points.
+                        </input>
                     </li>
-                    <li>
-                        <input id="q3_c"  type = "button" onclick = "getAnswer('3', 'c')" class="quiz answer">  C)   60% </input>
-                    </li>
-                    <li>
-                        <input id="q3_d" type = "button" onclick = "getAnswer('3', 'd')" class="quiz answer">  D)   25% </input>
-                    <li>
                 </ul>
+            </div>
+            <div id="a3_box" class="answer_box">
+                <p>
+                    Statement B is correct (assuming, of course, that the regression has been carried out correctly). Statement A is incorrect: the regression equation gives no information about causality. Indeed, there is likely a lurking variable (or probably a bunch of lurking variables) that affects both GPA and SAT score; SAT score is considered to be a (perhaps crude) measure 1of this lurking variable.
+                </p>
             </div>
 
             <div id="q4_box" class="quiz_box">
@@ -91,13 +107,11 @@
                     <li>
                 </ul>
             </div>
+            <div id="a4_box" class="answer_box">
+            </div>
+
         </form>
 
-        <div id="q3_box" class="quiz_box">
-        </div>
-
-        <div id="q4_box" class="question quiz">
-        </div>
             <script type='text/javascript'>
                 $(document).ready(function() {
                     $("#q1_box").show(); //everything starts hidden

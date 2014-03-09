@@ -2,6 +2,37 @@
  	margin:0px auto;
 }
 
+#mainheader {
+	text-align: center;
+	max-width: 800px;
+	font-size: 65px;
+}
+
+#subheader {
+	text-align: left;
+	max-width: 800px;
+	font-size: 40px;
+	position: relative;
+	top:60px;
+}
+#subtext {
+	position: relative;
+	top: 75px;
+}
+#intro {
+	text-align: left;
+	max-width: 800px;
+	font-size: 30px;
+}
+
+#head {
+	text-align: left;
+	max-width: 800px;
+	font-size: 30px;
+	position: relative;
+	top: 90px;
+}
+
 .solution_box {
 	display: none;
 }
@@ -18,9 +49,10 @@
 html, body{
 	text-align:center;
 	display: block;
-	background-color: #F1F1D4;
+	background-color: white;
 	width: 100%;
 	height: 100%;
+	font-family: 'Esteban', sans-serif;
 }
 
 
@@ -30,10 +62,21 @@ html, body{
 }
 
 .quiz_box {
-	background: AliceBlue;
+	background: #3B90DD;
 	z-index: 1;
 	/*background-color: #66CCFF;*/
 	display:none;
+	text-align: left;
+	/*max-width: 800px;*/
+	font-size: 30px;
+	position: relative;
+	top: 120px;
+}
+
+#q1_question {
+	max-width: 800px;
+	position: relative;
+	top: 10px;
 }
 
 .answer_box {
@@ -42,6 +85,7 @@ html, body{
 	display:none;
 	background: Gold;
 	padding: 50px;
+
 }
 
 /*

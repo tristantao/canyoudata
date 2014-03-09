@@ -4,12 +4,19 @@ var ANS_KEY = {1:"E", 2:"A", 3:"B", 4:"B"};
 
 var TOTAL_CORRECT = 0;
 
-function getAnswer(q_num, q_ans) {
+function getAnswer(current_q_num, q_ans) {
 	/*
 	Give a question number and the answer chosen by the user, shows the answer and renders next question.
 	*/
-	currentSolution(q_num, q_ans);
-	nextQuestion(q_num);
+	generateAnswerButton(current_q_num);
+
+	currentSolution(current_q_num, q_ans);
+	nextQuestion(current_q_num);
+}
+
+function generateAnswerButton(current_q_num) {
+	var questionBoxID= "#q"+current_q_num+"_box";
+ $(questionBoxID).append( "<a href='#' class='see_answer'>See Answer</a>");
 }
 
 function currentSolution(current_q_num, q_ans) {

@@ -1,6 +1,14 @@
 <!doctype html>
 <html lang="en">
     <%= csrf_meta_tag %>
+    <div id="navbar">
+      <ul>
+        <li><a href="#">Handbook</a></li>
+        <li><a href="#">Secret</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </div>
     <head>
         <h1>
             Are you Data Literate?
@@ -18,16 +26,16 @@
                 </div>
                 <ul>
                     <li>
-                        <a id="q1_a" href="#" class="button" onclick = "getAnswer('1', 'a')" class="quiz answer">  A)  25% </a>
+                        <a id="q1_a" href="#" class="button" onclick = "getAnswer('1', 'a')" class="quiz answer">  A) 25% </a>
                     </li>
                     <li>
-                        <input id="q1_b" type="button" onclick = "getAnswer('1', 'b')" class="quiz answer">  B)   50% </input>
+                        <input id="q1_b" type="button" onclick = "getAnswer('1', 'b')" class="quiz answer">  B) 50% </input>
                     </li>
                     <li>
-                        <input id="q1_c"  type = "button" onclick = "getAnswer('1', 'c')" class="quiz answer">  C)   60% </input>
+                        <input id="q1_c"  type = "button" onclick = "getAnswer('1', 'c')" class="quiz answer">  C) 60% </input>
                     </li>
                     <li>
-                        <input id="q1_d" type = "button" onclick = "getAnswer('1', 'd')" class="quiz answer">  D)   25% </input>
+                        <input id="q1_d" type = "button" onclick = "getAnswer('1', 'd')" class="quiz answer">  D) 25% </input>
                     <li>
                 </ul>
             </div>

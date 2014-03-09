@@ -2,18 +2,35 @@
 <html lang="en">
     <%= csrf_meta_tag %>
     <head>
-        <h1>
+        <h1 id = "header">
             Are you Data Literate?
         </h1>
+        <div id="intro">
+            <p class ="accent">You Should Be.</p>
+            <br>
+            <p>
+                In todays day and age we are interpreting data everyday. Being able
+                to analyze data is a fundamental skill for the 21st century as all
+                decisions become data driven.
+            </p>
+        </div>
     </head>
+
+
+
+
+
     <body>
         <div id="head">
-          Define "21st century Literacy"?
+          <p class ="accent">Data Literacy Defined:</p>
+          <p>The ability to understand the quantitive ramifications of your decisions.</p>
         </div>
-        <p>In todays age, interpreting data is all around us. More often than not you are analyzing data in some fashion. Blah blah blah other good writing</p>
         <form class="question">
-            <div id="q1_box" class="quiz_box">
+            <div class="quiz_box">
                 <div id="q1_question">
+                    <div class ="q_headers">
+                        <p> Problem One </p>
+                    </div>
                     <p>If you choose an answer to this question at random, what is the chance you will be correct?</p>
                 </div>
 
@@ -107,4 +124,7 @@
                 });
             </script>
      </body>
+     <link href='http://fonts.googleapis.com/css?family=Esteban' rel='stylesheet' type='text/css'>
+     <link href='http://fonts.googleapis.com/css?family=Flamenco' rel='stylesheet' type='text/css'>
+     <link href='http://fonts.googleapis.com/css?family=Fanwood+Text' rel='stylesheet' type='text/css'>
  </html>

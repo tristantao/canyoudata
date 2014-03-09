@@ -1,37 +1,81 @@
 <!doctype html>
-
 <html lang="en">
     <style type="text/css"> </style>
-
     <head>
         <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
         <h1>
-            Welcome To  Slate!
+            Are you Data Literate?
         </h1>
     </head>
 
-    <div>
+<!-- ##################################################-->
+        <div>
+            <form name = "myform">
+            Which is the largest animal on land?<br>
+            Aardvark <input type = "radio" name = "rad1" onclick = "getAnswer('1a', '1')">
+            Whale <input type = "radio" name = "rad1" onclick = "getAnswer('1b', '2')">
+            Elephant <input type = "radio" name = "rad1" onclick = "getAnswer('1c', '3')">
+            Rhinosaurus <input type = "radio" name = "rad1" onclick = "getAnswer('1d','4')">
+            <br><br>
+            <div id = "para"><div>
+        </form>
     </div>
-     <p> This is a place where people learn to do data analysis! </p>
-     <body>
-     <ol>
-        <li>
-            <a href="main_lesson.html">Lessons</a>
-        </li>
-        <li>
-            <a href="#">About</a>
-        </li>
-        <li>
-            <a href="#">Contact Us</a>
-        </li>
-        <li>
-            <a href="about_us.html">About Us</a>
-        </li>
-     </ol>
-    <button id="button" width="100">
+<!-- ##################################################-->
+    <body>
 
-    </button>
+        <div id="">
+          Define "21st century Literacy"?
+        </div>
+        <p>In todays age, interpreting data is all around us. More often than not you are analyzing data in some fashion. Blah blah blah other good writing</p>
 
+        <form class="question">
+            <div id="q1_box" class="quiz question">
+                <div id="q1_question">
+                    <p>If you choose an answer to this question at random, what is the chance you will be correct?</p>
+                </div>
+
+                <ul>
+                    <li>
+                        <div id="q1_a" class="quiz answer">
+                            <a href="#" class="button" onclick = "getAnswer('1a', '1')">  A)   25% </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="q1_b" class="quiz answer">
+                            <input type = "button" onclick = "getAnswer('1a', '1')">  B)   50% </input>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="q1_c" class="quiz answer">
+                            <input type = "button" onclick = "getAnswer('1a', '1')">  C)   60% </input>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="q1_d" class="quiz answer">
+                            <input type = "button" onclick = "getAnswer('1a', '1')">  D)   25% </input>
+                        </div>
+                    <li>
+                </ul>
+            </div>
+        </form>
+
+        <div id="q2_box" class="question quiz">
+        </div>
+
+        <div id="q3_box" class="question quiz">
+        </div>
+
+        <div id="q4_box" class="question quiz">
+        </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+         <script type="text/javascript" src="javascript/main.js"></script>
      </body>
-     <script type="text/javascript" src="javascript/main.js"></script>
  </html>

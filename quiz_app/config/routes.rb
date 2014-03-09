@@ -2,7 +2,8 @@ QuizApp::Application.routes.draw do
     #match '/home' => 'static_pages#index.html'
     get '/home', :to => redirect('static_pages/index.html')
     get '/home2', :to => redirect('index.html')
-    
+
+  get "users/new"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

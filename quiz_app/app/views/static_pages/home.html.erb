@@ -2,34 +2,44 @@
 <html lang="en">
     <%= csrf_meta_tag %>
     <head>
-        <h1>
+        <h1 id="mainheader">
             Are you Data Literate?
         </h1>
+        <div id="intro">
+             <p id ="subheader">You Should Be.</p>
+             <br>
+             <p id ="subtext">
+                 In todays day and age we are interpreting data everyday. Being able
+                 to analyze data is a fundamental skill for the 21st century as all
+                 decisions become data driven.
+             </p>
+         </div>
     </head>
     <body>
         <div id="head">
-          Define "21st century Literacy"?
+          <p class ="accent">Data Literacy Defined:</p>
+          <p>The ability to understand the quantitive ramifications of your decisions.</p>
         </div>
-        <p>In todays age, interpreting data is all around us. More often than not you are analyzing data in some fashion. Blah blah blah other good writing</p>
         <form class="question">
             <div id="q1_box" class="quiz_box">
                 <div id="q1_question">
-                    <p>If you choose an answer to this question at random, what is the chance you will be correct?</p>
+                        <p>Problem One</p>
+                        <p>If you choose an answer to this question at random, what is the chance you will be correct?</p>
+                    <ul>
+                        <li>
+                            <a id="q1_a" href="#" class="button" onclick = "getAnswer('1', 'a')" class="quiz answer">  A)  25% </a>
+                        </li>
+                        <li>
+                            <input id="q1_b" type="button" onclick = "getAnswer('1', 'b')" class="quiz answer">  B)   50% </input>
+                        </li>
+                        <li>
+                            <input id="q1_c"  type = "button" onclick = "getAnswer('1', 'c')" class="quiz answer">  C)   60% </input>
+                        </li>
+                        <li>
+                            <input id="q1_d" type = "button" onclick = "getAnswer('1', 'd')" class="quiz answer">  D)   25% </input>
+                        <li>
+                    </ul>
                 </div>
-                <ul>
-                    <li>
-                        <a id="q1_a" href="#" class="button" onclick = "getAnswer('1', 'a')" class="quiz answer">  A)  25% </a>
-                    </li>
-                    <li>
-                        <input id="q1_b" type="button" onclick = "getAnswer('1', 'b')" class="quiz answer">  B)   50% </input>
-                    </li>
-                    <li>
-                        <input id="q1_c"  type = "button" onclick = "getAnswer('1', 'c')" class="quiz answer">  C)   60% </input>
-                    </li>
-                    <li>
-                        <input id="q1_d" type = "button" onclick = "getAnswer('1', 'd')" class="quiz answer">  D)   25% </input>
-                    <li>
-                </ul>
             </div>
             <div id="a1_box" class="answer_box">
                 <p>
@@ -109,7 +119,7 @@
                     In fact, probabilities in such "binary outcome" situations could be anything from 0 to 1. For example, if the outcomes of interest are "has cancer" and "does not have cancer," the probabilities of having cancer are (in most cases) much less than 1/2. The empirical (frequentist) perspective allows us to estimate such probabilitie.
                 </p>
             </div>
-            <div id="finish_box">
+            <div id="finish_box" class="finish_box">
 
 
             </div>
@@ -125,4 +135,5 @@
                 });
             </script>
      </body>
+     <link href='http://fonts.googleapis.com/css?family=Esteban' rel='stylesheet' type='text/css'>
  </html>
